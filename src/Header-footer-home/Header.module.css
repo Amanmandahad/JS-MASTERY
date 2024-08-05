@@ -1,0 +1,111 @@
+/* Header.module.css */
+ 
+.container {
+    height: 85px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: fixed;
+    background-color: #0C1016;
+    box-shadow: 0px 0px 5px whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain {
+    height: 100%;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.image img {
+    height: 80px;
+    width: 84px;
+    margin: 10px 0;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+    justify-content: center;
+    transition: max-height 0.3s ease-out;
+}
+
+.normal{
+    margin-left: 20px;
+    background: linear-gradient(45deg, black, purple);
+    color: white;
+    padding: 8px 17px;
+    box-shadow: 0px 0px 10px #400040; 
+    font-size: 19px;
+    border-radius: 30px;
+    border: none;
+}
+
+.sigma{
+    margin-left: 20px;
+    background: linear-gradient(35deg, #28A745, #520573);
+    color: white;
+    padding: 8px 17px;
+    box-shadow: 0px 0px 10px #400040; 
+    font-size: 19px;
+    border-radius: 30px;
+    border: none;
+}
+.sigma:hover{
+    transform: scale(1.1);
+}
+.normal:hover{
+    transform: scale(1.1);
+}
+
+.btn button:hover {
+    background-color: rgb(200, 38, 162);
+}
+
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .btn {
+        display: none;
+        padding: 10px;
+        width: 100%;
+        gap: 20px;
+        cursor: pointer;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: #0C1016;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        border-bottom: 1px solid whitesmoke;
+        z-index: 1000;
+    }
+
+    .btn.menuOpen {
+        display: flex;
+    }
+
+    .menuToggle {
+        display: block;
+    }
+}

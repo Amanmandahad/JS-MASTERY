@@ -1,0 +1,145 @@
+
+.learn{ 
+    min-height: 100px;
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.learn h3{
+    color: #971fb6;
+}
+.boy{
+    margin-top: 20px;
+    height:100%;
+    display: flex;
+    justify-content: center;
+}
+.boy img{
+    height: 180px;
+    width: 280px;
+}
+.require{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.require button{
+    margin-left: 5px;
+    border: 1px solid #FFD87D;
+    margin-top: 30px;
+    font-size: 18px;
+    cursor: default;
+    font-weight: 600;
+    padding: 10px 18px;
+    background-color: #121A25;
+    box-shadow: 0px 0px 8px  #CBAF6A; /* Add shadow */
+}
+.require button:hover{
+    transform: scale(1.09);
+}
+
+/* why code with js mastery */
+
+.why{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Features */
+.feature{
+    padding: 20px;
+}
+.feature p {
+ font-size: 20px;
+}
+.feature h5{
+    font-size: 19px;
+    color: rgb(233, 226, 222);
+}
+.feature i{
+    font-size: 24px;
+}
+/* reviews */
+.views{
+    display: flex;
+    height: 60px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.reviews{
+    min-height:60vh;
+    gap: 30px;
+   min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+ .card{
+    height: 330px;
+    margin-left: 5px;
+    width: 370px;
+    background-color: #151D2A;
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid #5E005E;
+    box-shadow: 0px 0px 15px #730b73;
+ }
+ .star{
+    font-size: 17px;
+    color: gold;
+    background-color: #00FFB2;
+    gap: 15px;
+    margin-left: 6px;
+    margin-bottom: 5px;
+ }
+ .content img{
+    border-radius: 50px;
+    margin: 0 10px;
+ }
+.content{
+    margin-top: 20px;
+}
+.content span{
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    .reviews{
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* Company */
+.company{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.company img{
+    width: 160px;
+    height: 90px;
+}
+
+.student_text{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #cc23aa;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+

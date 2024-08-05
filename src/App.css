@@ -1,0 +1,21 @@
+
+a {
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #2730c9;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+  body{
+    background-color: #0C1016;
+  }
+  li{
+    list-style: none;
+  }
