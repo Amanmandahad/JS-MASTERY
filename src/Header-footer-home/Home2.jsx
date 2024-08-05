@@ -26,7 +26,7 @@ import person3 from '../assets/person3.webp';
 
 const scaleUp = {
   hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
+  visible: { opacity: 1, scale: 1.1, transition: { duration: 0.6 } },
 };
 
 const Home2 = () => {
