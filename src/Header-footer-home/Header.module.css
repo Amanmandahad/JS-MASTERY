@@ -24,6 +24,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+
 }
 
 .image img {
@@ -46,7 +47,6 @@
     background: linear-gradient(45deg, black, purple);
     color: white;
     padding: 8px 17px;
-    box-shadow: 0px 0px 10px #400040; 
     font-size: 19px;
     border-radius: 30px;
     border: none;

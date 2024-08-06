@@ -1,8 +1,8 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import "./Home.module.css";
+import { useNavigate } from "react-router-dom";
 import jsmastery from "../assets/header.logo.webp";
-
 import img from "../assets/contact (2).png";
 import style from "./Home.module.css";
 import coverletter from "../assets/cover-letter.svg";
@@ -28,12 +28,25 @@ const slideIn = {
 
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/courses'); // Navigate to the target route
+  };
+
+  const handlechange = () => {
+    navigate('/mentor'); // Navigate to the target route
+  };
+
+
+
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 300], [0, -50]);
   const scale = useTransform(scrollY, [0, 400], [1, 1.2]);
 
   return (
     <>
+   
       {/* Hero Section */}
       <motion.div
         initial="hidden"
@@ -51,8 +64,8 @@ const Home = () => {
               >
                 Become the software engineer that companies love to hire
               </motion.h1>
-              <button>1:1 Mentorship</button>
-              <button>All Courses</button>
+              <button onClick={handlechange}>1:1 Mentorship</button>
+              <button onClick={handleClick}>All Courses</button>
             </div>
             <div className="col-md-5 col-sm-12">
               <motion.img

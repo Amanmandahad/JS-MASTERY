@@ -1,0 +1,23 @@
+.container {
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.container img{
+    min-width: 100%;
+    margin-top: 5px;
+    height: 200px;
+}
+.courses { 
+    background-color: #090e13;
+    height: 400px;
+    width: 340px;
+    margin: 15px 0;
+}
+.courses_text{
+    padding: 10px;
+}
+.courses_text h4{
+    font-weight: 600;
+}

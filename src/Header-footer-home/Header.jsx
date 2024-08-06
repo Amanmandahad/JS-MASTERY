@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import style from './Header.module.css';
 import logo from '../assets/header.logo.webp';
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const  navigate  = useNavigate() ;  
+
+  const homepage = () => {
+    navigate('/'); // Navigate to the target route
+  };
+
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -12,7 +20,7 @@ const Header = () => {
       <header className={style.container}>
         <div className={style.contain}>
           <div className={style.image}>
-            <img src={logo} alt="Company Logo" />
+            <img src={logo} alt="Company Logo"  onClick={homepage} />
           </div>
 
           <div className={`${style.btn} ${menuOpen ? style.menuOpen : ''}`}>
