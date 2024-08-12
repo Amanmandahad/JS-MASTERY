@@ -1,7 +1,7 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Slider from "react-slick/lib/slider";
 import style from "./Home2.module.css";
 import { IoStarSharp } from "react-icons/io5";
 import { motion } from "framer-motion";
@@ -19,9 +19,47 @@ import img1 from "../assets/1st featureimg.webp";
 import img2 from "../assets/2nd featureimg.webp";
 import img3 from "../assets/4th featureimg.webp";
 import img4 from "../assets/img6feature.webp";
-import person1 from '../assets/person1.webp';
-import person2 from '../assets/person2.webp';
-import person3 from '../assets/person3.webp';
+
+
+const settings = {
+  dots: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 6000,
+  autoplaySpeed: 1,
+  pauseOnHover: true,
+  className: "center",
+  cssEase: "linear",
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+};
+
 
 
 const scaleUp = {
@@ -175,56 +213,42 @@ const Home2 = () => {
         </h1>
       </div>
       <br />
-      <div className={style.reviews}>
-        <div className={style.card}>
-          <p>
-            “I started learning programming with JS 4 years ago with his C#
-            courses. Thanks to those I landed my first job. Then, I continued to
-            learn from his materials and made the jump from junior to senior
-            Software Engineer (my salary went 10x from my first job). Now, 4
-            years later I continue to learn with his excellent courses.”
-          </p>
-          <div className={style.content}>
-            <img src={person1} alt="" />
-           <span> Alex fernendis</span> 
-           <IoStarSharp  className={style.star}/>
-           <IoStarSharp  className={style.star}/>
-           <IoStarSharp  className={style.star}/>
-           <IoStarSharp  className={style.star}/>
-           <IoStarSharp  className={style.star}/>  
-          </div>
-        </div>
+      <div className={style.carosal}>
+    <div className={`slider-container ${style.slider}`}>
+        <Slider {...settings}>
+            <div className={style.cards}>
+                <h1>hiii</h1>
+            </div>
+            <div className={style.cards}>
+            <h1>hiii</h1>
 
-        <div className={style.card}>
-          <p>
-          “I had an interest in React whilst I was in a previous job not using it at all, so I did the free YouTube version of your first React course and found it very useful! I then paid for the full thing, and I now have a job working with React, thanks man!”     
-          </p>
-          <div className={style.content}>
-            <img src={person2} alt="" />
-           <span> Joe trump </span> 
-           <IoStarSharp  className={style.star}/>
-           <IoStarSharp  className={style.star}/>
-           <IoStarSharp  className={style.star}/>
-           <IoStarSharp  className={style.star}/>
-           <IoStarSharp  className={style.star}/>  
-          </div>
-        </div>
+            </div>
+            <div className={style.cards}>
+            <h1>hiii</h1>
 
-        <div className={style.card}>
-          <p>
-          “I am proud to say that I have learned a lot from your web development courses, which has helped me to earn a significant income. I would love to continue learning from you. You are a great man. Lots of love from your Afghan student.”
-          </p>
-          <div className={style.content}>
-            <img src={person3} alt="" />
-           <span> Albert butler</span> 
-           <IoStarSharp  className={style.star}/>
-           <IoStarSharp  className={style.star}/>
-           <IoStarSharp  className={style.star}/>
-           <IoStarSharp  className={style.star}/>
-           <IoStarSharp  className={style.star}/>  
-          </div>
-        </div>
-      </div>
+            </div>
+            <div className={style.cards}>
+            <h1>hiii</h1>
+
+            </div>
+            <div className={style.cards}>
+            <h1>hiii</h1>
+
+            </div>
+        </Slider>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
       {/* students */}
       <div className={style.student_text}>
         <h1>

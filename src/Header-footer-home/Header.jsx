@@ -30,7 +30,7 @@ const Header = () => {
           </div>
 
           <button className={style.menuToggle} onClick={toggleMenu}>
-          ☰
+          <i className={`bi bi-list ${menuOpen? 'bi-x' : 'bi-menu'}`}></i>
           </button>
         </div>
       </header>

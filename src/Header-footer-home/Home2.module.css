@@ -69,23 +69,37 @@
     align-items: center;
     justify-content: center;
 }
-.reviews{
-    min-height:60vh;
-    gap: 30px;
-   min-width: 100%;
+
+ .carosal {
+    min-height: 50vh;
+    max-width: 100%;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
- .card{
-    height: 330px;
-    margin-left: 5px;
-    width: 370px;
-    background-color: #151D2A;
-    border-radius: 15px;
-    padding: 25px;
-    border: 1px solid #5E005E;
-    box-shadow: 0px 0px 15px #730b73;
- }
+
+.slider-container {
+    min-height: 100%;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.slider {
+    height: 100%;
+    width: 100%;
+
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Add gap between images */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
  .star{
     font-size: 17px;
     color: gold;
