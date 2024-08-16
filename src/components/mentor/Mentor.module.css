@@ -1,8 +1,224 @@
-.container{
-    height: 100vh;
+/* Base styles */
+.container {
+    min-height: 100vh;
     width: 100%;
     display: flex;
+}
+
+.contain1 {
+    min-height: 100vh;
+    width: 35%;
+    background-color: rgb(13, 5, 23);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box; 
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info img {
+    width: 55%;
+    height: auto;
+    border-radius: 60%;
+}
+
+.info h2 {
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: #FF7666;
+}
+
+.info p {
     text-align: center;
-    background-color: navy;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn1, .btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    border: 4px solid #3D91FF;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.btn1 {
+    height: 5rem;
+    width: 5rem;
+    font-size: 1.4rem;
+    padding: 2px; 
+}
+
+.btn2 {
+    height: 5rem;
+    width: 7rem;
+    font-size: 1.4rem;
+    padding: 2px; 
+}
+
+/* Container 2 */
+.contain2 {
+    min-height: 100vh;
+    background-color: #0C1016;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contain2 h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1BFFBA;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.contain2 h3 {
+    font-size: 2rem;
+}
+
+.tabs {
+    background-color: #0C1016;
+    min-width: 600px;
+    display: flex;
+    justify-content:space-evenly;
+    border: none;
+    cursor: pointer;
+    padding: 10px 5px;
+    box-shadow: 0px 0px 6px white;
+}
+
+.tabWrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tab {
+    margin: 30px 0px;
+    padding: 15px 20px;
+    height: 220px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    border-radius: 15px;
+}
+
+.tab h4 {
+    font-size: 2rem;
+    line-height: 28px;
+}
+
+.tab p {
+    font-size: 1.1rem;
+    color: rgb(194, 185, 185);
+}
+
+.btn {
+    border: 1px solid white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    padding: 8px 18px;
+    align-items: center;
+    border-radius: 15px;
+
+}
+.btn button{
+    padding: 7px 14px;
+    border-radius: 10px;
+    background-color: white;
     color: black;
+    font-weight: bold;
+}
+.btn span{
+    font-size: 1.1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .contain1 {
+        height: auto;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info h2 {
+        font-size: 1.9rem;
+    }
+    .info img{
+        width: 50%;
+    }
+
+    .info p {
+        font-size: 1.1rem;
+    }
+
+    .btn1, .btn2 {
+        font-size: 1.2rem;
+    }
+
+    .contain2 {
+        height: auto;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contain2 h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .contain2 h3 {
+        font-size: 1.4rem;
+    }
+
+    .tabs {
+        min-width: 100%;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .tabWrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .tab {
+        padding: 10px 15px;
+        height: auto;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .btn {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
 }
