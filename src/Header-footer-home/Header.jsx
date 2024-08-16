@@ -1,39 +1,58 @@
 import React, { useState } from 'react';
 import style from './Header.module.css';
 import logo from '../assets/header.logo.webp';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { MdArrowUpward } from "react-icons/md";
+
+const scrollup = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
 
 const Header = () => {
-  const  navigate  = useNavigate() ;  
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const homepage = () => {
-    navigate('/'); // Navigate to the target route
+    navigate('/');
   };
 
-
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const isHomePage = location.pathname === '/';
 
   return (
     <>
-      <header className={style.container}>
-        <div className={style.contain}>
-          <div className={style.image}>
-            <img src={logo} alt="Company Logo"  onClick={homepage} />
-          </div>
 
-          <div className={`${style.btn} ${menuOpen ? style.menuOpen : ''}`}>
-            <button className={style.sigma}>New sigma batch</button>
-            <button className={style.normal}>Sign in</button>
-            <button className={style.normal}>Sign out</button>
-          </div>
+   
+{isHomePage && (
+         <header className={style.container}>
+         <div className={style.contain}>
+           <div className={style.image}>
+             <img src={logo} alt="Company Logo" onClick={homepage} />
+           </div>
+           
+           <div className={style.btn}>
+             <button className={style.normal}>Sign in</button>
+             <button className={style.normal}>Sign out</button>
+             
+           </div>
+         </div>
+       </header>
+      )}
 
-          <button className={style.menuToggle} onClick={toggleMenu}>
-          <i className={`bi bi-list ${menuOpen? 'bi-x' : 'bi-menu'}`}></i>
+
+
+
+    
+
+      {isHomePage && (
+        <div className={style.down}>
+          <button onClick={scrollup}>
+            <MdArrowUpward className={style.icon} />
           </button>
         </div>
-      </header>
+      )}
     </>
   );
 };

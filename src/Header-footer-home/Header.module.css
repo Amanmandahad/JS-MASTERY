@@ -7,10 +7,10 @@
     left: 0;
     z-index: 1000;
     position: fixed;
-    background-color: #0C1016;
-    box-shadow: 0px 0px 5px whitesmoke;
+    background-color:  #07080a;
+    box-shadow: 0px 0px 5px #E258D2;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -39,31 +39,16 @@
 
     text-align: center;
     justify-content: center;
-    transition: max-height 0.3s ease-out;
 }
 
 .normal{
     margin-left: 20px;
     background: linear-gradient(45deg, black, purple);
     color: white;
-    padding: 8px 17px;
+    padding: 9px 18px;
     font-size: 19px;
     border-radius: 30px;
     border: none;
-}
-
-.sigma{
-    margin-left: 20px;
-    background: linear-gradient(35deg, #28A745, #520573);
-    color: white;
-    padding: 8px 17px;
-    box-shadow: 0px 0px 10px #400040; 
-    font-size: 19px;
-    border-radius: 30px;
-    border: none;
-}
-.sigma:hover{
-    transform: scale(1.1);
 }
 .normal:hover{
     transform: scale(1.1);
@@ -73,39 +58,36 @@
     background-color: rgb(200, 38, 162);
 }
 
-.menuToggle {
-    display: none;
-    background: none;
+.down{
+
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  right: 25px;
+  bottom: 20px;
+}
+.icon{
+    font-size: 80px;
+    border-radius: 20px;
     border: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
+  background-color: #3B003B;
+  border: 1px solid white;
+  box-shadow: 0px 0px 20px #3B003B;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .btn {
-        display: none;
-        padding: 10px;
-        width: 100%;
-        gap: 20px;
-        cursor: pointer;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        background-color: #0C1016;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        border-bottom: 1px solid whitesmoke;
-        z-index: 1000;
-    }
+@media (max-width: 768px){
+  .down {
+    right: 15px;
+  }
+  .icon{
+    font-size: 50px;
+  }
+  .normal{
+    font-size: 17px;
+    padding: 7px 14px;
+    margin-left: 5px;
 
-    .btn.menuOpen {
-        display: flex;
-    }
-
-    .menuToggle {
-        display: block;
-    }
+  }
 }

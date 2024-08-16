@@ -13,11 +13,12 @@
     margin-top: 20px;
     height:100%;
     display: flex;
-    justify-content: center;
+    justify-content: center;   
 }
 .boy img{
     height: 180px;
     width: 280px;
+  
 }
 .require{
     height: 100%;
@@ -71,9 +72,11 @@
 }
 
  .carosal {
-    min-height: 50vh;
+    min-height: 60vh;
     max-width: 100%;
     overflow: hidden;
+    overflow-x: hidden; 
+    overflow-y: auto;
     display: flex;
     align-items: center;
 }
@@ -88,7 +91,6 @@
 .slider {
     height: 100%;
     width: 100%;
-
     margin-bottom: 30px;
 }
 
@@ -96,9 +98,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px; /* Add gap between images */
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap; 
+    display: flex;
 }
+
+.card{
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: 1px solid goldenrod;
+    box-shadow: 0px 0px 8px gold;
+  width: 350px;
+    height: 318px;
+    padding: 5px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: start;
+}
+.card img{
+  margin-bottom: 5px;
+    height: 70px;
+    width: 70px;
+}
+.card p{
+    font-size: 17px;
+    color: rgb(181, 173, 173);
+}
+
+
+
 
  .star{
     font-size: 17px;
@@ -128,6 +157,11 @@
         display: flex;
         flex-direction: column;
     }
+
+    .card p{
+        font-size: 15px;
+       }
+    
 }
 /* Company */
 .company{

@@ -1,15 +1,29 @@
-import React from 'react'
 import style from './Courses.module.css'
 import python from '../assets/Python.webp'
 import next from '../assets/Nextjs.webp'
 import js from '../assets/js.webp'
-const courses = () => {
+import { useNavigate } from 'react-router-dom'
+const Courses = () => {
+  const navigate = useNavigate();
+
+const handlenext = ()=>{
+  navigate('/courses/next')
+}
+
+
+
+
+
+
   return (
     <>
+
+<h1>hssidasd</h1>
+
 <div className={style.container}>
 <div className="container">
   <div className="row align-items-center text-start justify-content-evenly">
-    <div className={`col-lg-5 ${style.courses}`}  style={{boxShadow:'0px 0px 10px #F05709'}}>
+    <div className={`col-lg-5 ${style.courses}`}  style={{boxShadow:'0px 0px 10px #F05709'}} onClick={handlenext}>
   <img src={next} alt="" className='img-fluid' />
  <div className={style.courses_text}>
  <h4 style={{color:'#155FC6'}}>The ultimate Next js course</h4>
@@ -38,8 +52,10 @@ const courses = () => {
 <h4>$69</h4>
 </div>
 </div>   
+
+
     </>
   )
 }
 
-export default courses
+export default Courses

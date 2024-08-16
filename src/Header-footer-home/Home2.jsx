@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick/lib/slider";
 import style from "./Home2.module.css";
 import { IoStarSharp } from "react-icons/io5";
-import { motion } from "framer-motion";
 import { GoGoal } from "react-icons/go";
 import Salesforce from "../assets/salesforce.png";
 import airtel from "../assets/airtel.png";
@@ -19,6 +18,12 @@ import img1 from "../assets/1st featureimg.webp";
 import img2 from "../assets/2nd featureimg.webp";
 import img3 from "../assets/4th featureimg.webp";
 import img4 from "../assets/img6feature.webp";
+import Boy1 from '../components/assests2/Boy1.jpg';
+import Boy2 from '../components/assests2/boy2.jpg';
+import Boy3 from '../components/assests2/boy3.jpg';
+import Boy4 from '../components/assests2/boy4.jpg';
+import Boy5 from '../components/assests2/boy5.jpg';
+
 
 
 const settings = {
@@ -27,7 +32,7 @@ const settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  speed: 6000,
+  speed: 15000,
   autoplaySpeed: 1,
   pauseOnHover: true,
   className: "center",
@@ -60,13 +65,6 @@ const settings = {
   ]
 };
 
-
-
-const scaleUp = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1.1, transition: { duration: 0.6 } },
-};
-
 const Home2 = () => {
   return (
     <>
@@ -86,27 +84,21 @@ const Home2 = () => {
         <div className="container">
           <div className="row justify-content-around align-items-center text-align-center">
             <div className="col-md-5 col-lg-3 col-sm-10 col-sx-12">
-              <button>I am a great developer but i can't land a job</button>
-
-              <button>I work as developer but i want a better job</button>
-
-              <button>
-                I am a Junior developer want to become senior developer
-              </button>
+              <button>I am a great developer but I can't land a job</button>
+              <button>I work as a developer but I want a better job</button>
+              <button>I am a Junior developer wanting to become a senior developer</button>
             </div>
-            <div className="col-md-5  col-lg-3 col-sm-10 col-sx-12">
-              <button>I have no skills im beginner to web dev</button>
-
+            <div className="col-md-5 col-lg-3 col-sm-10 col-sx-12">
+              <button>I have no skills; I am a beginner in web dev</button>
               <button>I know web dev but can't make projects</button>
-
-              <button>I'm good in developing but introvert to speak out</button>
+              <button>I'm good at developing but introverted to speak out</button>
             </div>
           </div>
         </div>
       </div>
-      {/* WHy code with js mastery*/}
+      {/* Why code with JS Mastery */}
       <div className={style.why}>
-        <h1>Why code with JS mastery ?</h1>
+        <h1>Why code with JS Mastery?</h1>
       </div>
       {/* Features */}
       <div className={style.feature}>
@@ -130,7 +122,6 @@ const Home2 = () => {
         </div>
         <br />
         <br />
-
         <div className="container">
           <div className="row justify-content-evenly align-items-center">
             <div className="col-md-6 col-lg-5 col-sm-6">
@@ -204,55 +195,69 @@ const Home2 = () => {
         </div>
       </div>
 
-      {/* reviewsss */}
-
+      {/* Reviews */}
       <div className={style.views}>
-        {" "}
         <h1 style={{ color: "#08FFB4" }}>
-          Not sure, if this works? Hear from our students
+          Not sure if this works? Hear from our students
         </h1>
       </div>
       <br />
       <div className={style.carosal}>
-    <div className={`slider-container ${style.slider}`}>
-        <Slider {...settings}>
+        <div className={`slider-container ${style.slider}`}>
+          <Slider {...settings}>
             <div className={style.cards}>
-                <h1>hiii</h1>
+              <div className={style.card}>
+                <img src={Boy1} className="img-fluid" alt="" />
+                <h4>Ashish Shukla</h4>
+                <div>
+   <p>The course is great because, as an experienced candidate, I know that all the technologies discussed in this course are used in my current project. However, I didn't have any idea about how these technologies work and why we use them.</p>
+                </div>
+              </div>
+            </div>
+            {/* Additional cards can be added here */}
+            <div className={style.cards}>
+              <div className={style.card}>
+              <img src={Boy2} className="img-fluid" alt="" />
+                <h4>Ayann khan</h4>
+                <div>
+                  <p>His MERN stack course is well-structured, covers a wide range of topics, and is very affordable. I highly reRakesh sir is passionate about teaching and provides excellent support to his students. The course is very comprehensive and covers everything you need to know to become a Pro MERN stack developer.</p>
+                </div>
+              </div>
             </div>
             <div className={style.cards}>
-            <h1>hiii</h1>
-
+              <div className={style.card}>
+              <img src={Boy3} className="img-fluid" alt="" />
+                <h4>Chirag Wankhade</h4>
+                <div>
+                  <p>Taking the Pizza App course was a game-changer for me! The course content was incredibly well-structured, and the hands-on projects were both fun and educational. The instructor's passion for app development was infectious, making every lesson engaging.</p>
+                </div>
+              </div>
             </div>
             <div className={style.cards}>
-            <h1>hiii</h1>
-
+              <div className={style.card}>
+              <img src={Boy4} className="img-fluid" alt="" />
+                <h4>Mayur More</h4>
+                <div>
+                  <p>His MERN stack course is well-structured, covers a wide range of topics, and is very affordable. I highly reRakesh sir is passionate about teaching and provides excellent support to his students. The course is very comprehensive and covers everything you need to know to become a Pro MERN stack developer.</p>
+                </div>
+              </div>
             </div>
             <div className={style.cards}>
-            <h1>hiii</h1>
-
+              <div className={style.card}>
+              <img src={Boy5} className="img-fluid" alt="" />
+                <h4>Rahul Sharma</h4>
+                <div>
+                <p>I really enjoy this course. The best things about this course is, covering not only the technical part of Full-Stack Engineering, but also the practical aspects of Application Development, means you will achieve In-Depth</p>
+                </div>
+              </div>
             </div>
-            <div className={style.cards}>
-            <h1>hiii</h1>
+          </Slider>
+        </div>
+      </div>
 
-            </div>
-        </Slider>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-      {/* students */}
+      {/* Students */}
       <div className={style.student_text}>
         <h1>
-          {" "}
           Thousands of students achieved their dream job at
           <GoGoal
             style={{
@@ -263,27 +268,23 @@ const Home2 = () => {
           />
         </h1>
       </div>
-      {/* Companiess */}
+
+      {/* Companies */}
       <div className={style.company}>
         <div className="container">
           <div className="row justify-content-evenly align-items-center">
             {[Salesforce, airtel, ibm, kmgp, paypal, google, isro, Dell].map(
               (logo, index) => (
-                <motion.div
+                <div
                   key={index}
                   className="col-lg-3 col-md-3 col-sm-12"
-                  initial="hidden"
-                  animate="visible"
-                  variants={scaleUp}
-                  whileHover={{ scale: 1.1, rotate: 10 }}
-                  whileTap={{ scale: 0.9 }}
                 >
                   <img
                     src={logo}
                     className="img-fluid"
                     alt={`Company Logo ${index}`}
                   />
-                </motion.div>
+                </div>
               )
             )}
           </div>
@@ -294,3 +295,4 @@ const Home2 = () => {
 };
 
 export default Home2;
+0

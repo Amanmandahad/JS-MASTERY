@@ -6,6 +6,7 @@ import './App.css'
 import Mentor from './components/mentor/Mentor'
 import Header from './Header-footer-home/Header';
 import Footer from './Header-footer-home/Footer'
+import Next from './Courses/nextjs/Next';
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/mentor" element={<Mentor />} />
+        <Route path="/courses/next" element={<Next />} />
       </Routes>
       <Footer/>
       </>
