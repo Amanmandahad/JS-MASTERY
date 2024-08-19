@@ -25,7 +25,6 @@ const Header = () => {
     <>
 
    
-{isHomePage && (
          <header className={style.container}>
          <div className={style.contain}>
            <div className={style.image}>
@@ -39,7 +38,7 @@ const Header = () => {
            </div>
          </div>
        </header>
-      )}
+      
 
 
 

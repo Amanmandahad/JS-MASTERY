@@ -1,10 +1,13 @@
 import React from 'react'
-
+import style from './Next.module.css'
 const Next = () => {
   return (
-    <div>
-      next
-    </div>
+   <>
+   <div className={style.next}>
+sdcsdc
+   </div>
+   
+   </>
   )
 }
 

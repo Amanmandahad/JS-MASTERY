@@ -3,10 +3,11 @@
     min-height: 100vh;
     width: 100%;
     display: flex;
+    margin-top: 60px;
 }
 
 .contain1 {
-    min-height: 100vh;
+    height: 100vh;
     width: 35%;
     background-color: rgb(13, 5, 23);
     display: flex;
@@ -30,7 +31,7 @@
 }
 
 .info h2 {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     font-weight: bolder;
     color: #FF7666;
 }
@@ -51,20 +52,8 @@
     font-weight: bold;
     text-align: center;
     margin: 10px 0;
-}
-
-.btn1 {
-    height: 5rem;
-    width: 5rem;
-    font-size: 1.4rem;
-    padding: 2px; 
-}
-
-.btn2 {
-    height: 5rem;
-    width: 7rem;
-    font-size: 1.4rem;
-    padding: 2px; 
+    padding: 8px 18px;
+    font-size: 1.3rem;
 }
 
 /* Container 2 */
@@ -105,23 +94,25 @@
 
 .tabWrapper {
     display: flex;
+    width: 100%;
     gap: 20px;
     margin-top: 20px;
 }
 
 .tab {
-    margin: 30px 0px;
+margin: 20px 0px;
     padding: 15px 20px;
-    height: 220px;
+    min-height: 220px;
     width: 48%;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid white; */
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .tab h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 28px;
 }
 
@@ -152,6 +143,37 @@
     font-size: 1.1rem;
 }
 
+.all{
+    margin: 20px 0px;
+    padding: 15px 20px;
+    min-height: 220px;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.all h4 {
+    font-size: 1.8rem;
+    line-height: 28px;
+}
+
+.all p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: rgb(194, 185, 185);
+}
+
+
+
+
+
+
+
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .container {
@@ -169,18 +191,18 @@
     }
 
     .info h2 {
-        font-size: 1.9rem;
+        font-size: 2.1rem;
     }
     .info img{
         width: 50%;
     }
 
     .info p {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .btn1, .btn2 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .contain2 {
@@ -190,12 +212,12 @@
     }
 
     .contain2 h1 {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         text-align: center;
     }
 
     .contain2 h3 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .tabs {
@@ -213,7 +235,7 @@
         padding: 10px 15px;
         height: auto;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .btn {
@@ -221,4 +243,69 @@
         align-items: center;
         padding: 10px;
     }
+    .all {
+        width: 55% ;
+    }
+    .tab h4{
+     font-size: 1.6rem;
+    }
+    .tab p{
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 450px){
+  
+    
+    .info h2 {
+        font-size: 1.9rem;
+    }
+    .info img{
+        width: 50%;
+    }
+
+    .info p {
+        font-size: 1.1rem;
+    }
+
+    .btn1, .btn2 {
+        font-size: 1.2rem;
+    }
+    .contain2 h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .contain2 h3 {
+        font-size: 1.4rem;
+    }
+    .all {
+        width: 100% ;
+    }
+    .tab h4{
+        font-size: 1.5rem;
+       }
+       .tab p{
+           font-size: 1rem;
+       
+       }
+   .all h4{
+     font-size: 1.5rem;
+    }
+    .all p{
+        font-size: 1rem;
+       }
+       .btn span{
+        font-size: 1rem;
+    }
+   
+    .btn button{
+        padding: 4px 8px;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+    }
+
 }

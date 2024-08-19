@@ -106,7 +106,6 @@
     width: 100%;
     background-color: #0c121a;
     color: white;
-    border: 1px solid  #521b86;
     box-shadow: 0px 0px 30px #521b86;
   width: 350px;
     height: 318px;
@@ -160,9 +159,9 @@
 
     .card p{
         font-size: 15px;
-       }
-    
+       }  
 }
+
 /* Company */
 .company{
     text-align: center;
