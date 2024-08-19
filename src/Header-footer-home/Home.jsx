@@ -32,7 +32,7 @@ const Home = () => {
           <div className="row justify-content-between align-items-center">
             <div className="col-md-5 col-sm-12">
               <h1>
-                Become the software engineer that companies love to hire
+                Become the software engineer that companie's love to hire
               </h1>
               <button onClick={handlechange}>1:1 Mentorship</button>
               <button onClick={handleClick}>All Courses</button>
