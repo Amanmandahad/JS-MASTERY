@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './Next.module.css';
-import Accordion from 'react-bootstrap/Accordion';
+
+import styles from './Javascript.module.css';
+
 import nextjs from '/src/assets/Nextjs.webp';
 import { IoVideocam } from "react-icons/io5";
 import { FaCircleDown } from "react-icons/fa6";
@@ -8,7 +8,7 @@ import { BsFillFileBarGraphFill } from "react-icons/bs";
 import { FaClock } from "react-icons/fa";
 import { GiMechaHead } from "react-icons/gi";
 import { RiProjectorFill } from "react-icons/ri";
-const Next = () => {
+const Javascript = () => {
   return (
     <div className={styles.container}>
     <div>  <h1>Welcome to the complete Nextjs course</h1></div>
@@ -134,4 +134,4 @@ const Next = () => {
   )
 }
 
-export default Next
+export default Javascript;

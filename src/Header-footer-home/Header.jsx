@@ -25,19 +25,21 @@ const Header = () => {
     <>
 
    
-         <header className={style.container}>
-         <div className={style.contain}>
-           <div className={style.image}>
-             <img src={logo} alt="Company Logo" onClick={homepage} />
-           </div>
-           
-           <div className={style.btn}>
-             <button className={style.normal}>Sign in</button>
-             <button className={style.normal}>Sign out</button>
-             
-           </div>
-         </div>
-       </header>
+       {isHomePage &&(
+          <header className={style.container}>
+          <div className={style.contain}>
+            <div className={style.image}>
+              <img src={logo} alt="Company Logo" onClick={homepage} />
+            </div>
+            
+            <div className={style.btn}>
+              <button className={style.normal}>Sign in</button>
+              <button className={style.normal}>Sign out</button>
+              
+            </div>
+          </div>
+        </header>
+       )}
       
 
 
