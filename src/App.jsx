@@ -9,6 +9,7 @@ import Footer from './Header-footer-home/Footer'
 import Next from './Courses/nextjs/Next';
 import Reactt from './Courses/react/Reactt';
 import Javascript from './Courses/js/Javascript';
+import Login from './components/authenticat/Login'
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/courses/next" element={<Next />} />
         <Route path="/courses/react" element={<Reactt />} />
         <Route path="/courses/js" element={<Javascript />} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
       <Footer/>
       </>

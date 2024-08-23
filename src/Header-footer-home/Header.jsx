@@ -17,6 +17,7 @@ const Header = () => {
   };
 
   const isHomePage = location.pathname === '/';
+   
 
   const scrollup = () => {
     window.scrollTo({
@@ -34,7 +35,7 @@ const Header = () => {
               <img src={logo} alt="Company Logo" onClick={homepage} />
             </div>
           {isAuthenticated &&(
-          <p> Welcome {user.name}</p>
+          <h1 className='text-blue-500'> Welcome {user.name}</h1>
           )}
 
 
@@ -46,7 +47,7 @@ const Header = () => {
               )
               :
              (
-              <button onClick={loginWithRedirect} className={style.normal}>Login</button>
+              <button onClick={loginWithRedirect} className={style.normal}>Login / Signin</button>
              )
             }
                          

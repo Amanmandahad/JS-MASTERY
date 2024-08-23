@@ -48,7 +48,7 @@
     padding: 9px 18px;
     font-size: 19px;
     border-radius: 30px;
-    border: none;
+    border: 1px solid white;
 }
 
 .btn button:hover {
