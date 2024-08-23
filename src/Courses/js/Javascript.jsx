@@ -121,10 +121,10 @@ const Javascript = () => {
 <img src={nextjs} className='img-fluid ' alt="" />
 <p> <IoVideocam className='flex items-center mx-1 bg-red'/> In depth High Quality Videos</p>
 <p> <GiMechaHead  className='flex items-center mx-1'/> Project Based Learning</p>
-<p> <FaCircleDown className='flex items-center mx-1' /> 12 hours of Content</p>
+<p><FaClock className='flex items-center mx-1'/> 12 hours of Content</p>
 <p> <BsFillFileBarGraphFill className='flex items-center mx-1'/> Beginner to Pro</p>
 <p> <RiProjectorFill className='flex items-center mx-1'/> Hands-on exercises</p>
-<p> <FaClock className='flex items-center mx-1'/> Downloadable content</p>
+<p>   <FaCircleDown className='flex items-center mx-1' /> Downloadable content</p>
 <button>Buy 29$</button>
      </div>
      

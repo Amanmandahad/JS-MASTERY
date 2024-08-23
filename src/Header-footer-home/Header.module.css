@@ -58,18 +58,16 @@
 }
 
 .down{
-
     display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
   z-index: 1000;
   right: 25px;
-  bottom: 20px;
+  bottom: 25px;
 }
 .icon{
     font-size: 75px;
-    border-radius: 20px;
     border: none;
   background-color: #3B003B;
   border: 1px solid white;
@@ -81,7 +79,7 @@
     right: 15px;
   }
   .icon{
-    font-size: 50px;
+    font-size: 55px;
   }
   .normal{
     font-size: 17px;

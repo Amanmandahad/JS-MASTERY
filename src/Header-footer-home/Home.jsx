@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
 import { useNavigate } from "react-router-dom";
 import "./Home.module.css";
 import jsmastery from "../assets/header.logo.webp";
@@ -23,6 +23,11 @@ const Home = () => {
   const handlechange = () => {
     navigate('/mentor'); // Navigate to the target route
   };
+
+ const handlereview = ()=>{
+  navigate('/courses'); 
+ }
+
 
   return (
     <>
@@ -142,7 +147,7 @@ const Home = () => {
                   develop skills like GraphQL, Pipelines, and more about backend
                   and frontend technologies.
                 </p>
-                <button>
+                <button onClick={handlereview}>
                   Enroll in the course now <IoArrowDown style={{ fontSize: '23px' }} />
                 </button>
               </div>

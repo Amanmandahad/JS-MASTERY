@@ -43,7 +43,7 @@
     align-items: center;
   }
   .content:hover{
-    transform: scale(1.01);
+    transform: scale(1.03);
   }
   .container h5{
     font-weight: bold;

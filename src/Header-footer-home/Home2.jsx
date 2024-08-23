@@ -1,9 +1,8 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick/lib/slider";
 import style from "./Home2.module.css";
-import { IoStarSharp } from "react-icons/io5";
 import { GoGoal } from "react-icons/go";
 import Salesforce from "../assets/salesforce.png";
 import airtel from "../assets/airtel.png";
@@ -129,7 +128,7 @@ const Home2 = () => {
                 src={img3}
                 className="img-fluid"
                 alt=""
-                style={{ height: "430px", width: "auto" }}
+                style={{ width: "70%" }}
               />
             </div>
             <div className="col-md-6 col-lg-5 col-sm-6">
@@ -175,7 +174,7 @@ const Home2 = () => {
                 src={img4}
                 className="img-fluid"
                 alt=""
-                style={{ height: "430px", width: "auto" }}
+                style={{ height: "360px", width: "auto" }}
               />
             </div>
             <div className="col-md-6 col-lg-5 col-sm-6">

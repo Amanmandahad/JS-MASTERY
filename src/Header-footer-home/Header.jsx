@@ -1,19 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import style from './Header.module.css';
-import logo from '../assets/header.logo.webp';
+import logo from '../assets/jsm-logo (1).svg';
 import { useNavigate, useLocation } from "react-router-dom";
 import { MdArrowUpward } from "react-icons/md";
-
-const scrollup = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { loginWithRedirect ,user, isAuthenticated } = useAuth0();
+  const { logout } = useAuth0();
+
 
   const homepage = () => {
     navigate('/');
@@ -21,31 +18,42 @@ const Header = () => {
 
   const isHomePage = location.pathname === '/';
 
+  const scrollup = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
-
-   
-       {isHomePage &&(
-          <header className={style.container}>
+      {isHomePage && (
+        <header className={style.container}>
           <div className={style.contain}>
             <div className={style.image}>
               <img src={logo} alt="Company Logo" onClick={homepage} />
             </div>
-            
+          {isAuthenticated &&(
+          <p> Welcome {user.name}</p>
+          )}
+
+
             <div className={style.btn}>
-              <button className={style.normal}>Sign in</button>
-              <button className={style.normal}>Sign out</button>
-              
+            {
+              isAuthenticated ?
+              (
+                <button  onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })} className={style.normal}>Logout</button>
+              )
+              :
+             (
+              <button onClick={loginWithRedirect} className={style.normal}>Login</button>
+             )
+            }
+                         
             </div>
           </div>
         </header>
-       )}
-      
-
-
-
-
-    
+      )}
 
       {isHomePage && (
         <div className={style.down}>
@@ -59,4 +67,3 @@ const Header = () => {
 };
 
 export default Header;
-

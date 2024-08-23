@@ -43,7 +43,7 @@
   align-items: center;
 }
 .content:hover{
-  transform: scale(1.01);
+  transform: scale(1.03);
 }
 .container h5{
   font-weight: bold;
@@ -55,7 +55,7 @@
 }
 .container span{
   font-size: 1.1rem;
-  color: rgb(180, 177, 177);
+
 }
 .right{
   margin: 10px 0px;
