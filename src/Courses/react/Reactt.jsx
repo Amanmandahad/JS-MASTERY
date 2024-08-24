@@ -11,13 +11,13 @@ import { RiProjectorFill } from "react-icons/ri";
 const Reactt = () => {
   return (
     <div className={styles.container}>
-    <div>  <h1>Welcome to the complete Nextjs course</h1></div>
+    <div>  <h1>Welcome to the complete Reactjs course</h1></div>
     <div className={styles.next}>
     <div className={styles.left}>
 <div className={styles.content}> 
 <div>
-<h5>Episode 1 :- Introduction to Nextjs</h5>
-<span>Server components vs CLient Components</span>
+<h5>Episode 1 :- Introduction to Reactjs</h5>
+<span>Installation, Virual dom and js</span>
 </div>
 <div>
 <i className="bi bi-camera-video-fill"></i>
@@ -26,7 +26,7 @@ const Reactt = () => {
 <div className={styles.content}> 
 <div>
 <h5>Episode 2 :- Igniting our App</h5>
-<span>Basics of react ,Overview of this course</span>
+<span>Basics of react,Class components and funcational compoenets,Overview of this course</span>
 </div>
 <div>
 <i className="bi bi-camera-video-fill"></i>
@@ -35,8 +35,8 @@ const Reactt = () => {
 </div>
 <div className={styles.content}> 
 <div>
-<h5>Episode 3 :- Deep dive inside file structure</h5>
-<span>Understandinf file structure</span>
+<h5>Episode 3 :- Props and state</h5>
+<span>Understandinf file structure and props and state</span>
 </div>
 <div>
 <i className="bi bi-camera-video-fill"></i>
@@ -45,8 +45,8 @@ const Reactt = () => {
 
 <div className={styles.content}> 
 <div>
-<h5>Episode 4 :- App Route</h5>
-<span>Problem with react router and Understanding of App route</span>
+<h5>Episode 4 :- Event handling</h5>
+<span>Deep dive inside class components and fucnrion component</span>
 </div>
 <div>
 <i className="bi bi-camera-video-fill"></i>
@@ -54,8 +54,8 @@ const Reactt = () => {
 </div>
 <div className={styles.content}> 
 <div>
-<h5>Episode 5 :- Next js Styling</h5>
-<span>How to style, Differents ways to style</span>
+<h5>Episode 5 :- Lifecycling method and styling</h5>
+<span>All about life cycle method and styling</span>
 </div>
 <div>
 <i className="bi bi-camera-video-fill"></i>
@@ -63,8 +63,8 @@ const Reactt = () => {
 </div>
 <div className={styles.content}> 
 <div>
-<h5>Episode 6 :- Caching</h5>
-<span>Caching with Nextjs</span>
+<h5>Episode 6 :-Routing</h5>
+<span>Routing in react js</span>
 </div>
 <div>
 <i className="bi bi-camera-video-fill"></i>
@@ -72,8 +72,8 @@ const Reactt = () => {
 </div>
 <div className={styles.content}> 
 <div>
-<h5>Episode 7 :- Image Optimization</h5>
-<span>Image Optimization for faster loading</span>
+<h5>Episode 7 :- Context api</h5>
+<span>Context api for more flexibility</span>
 </div>
 <div>
 <i className="bi bi-camera-video-fill"></i>
@@ -81,8 +81,8 @@ const Reactt = () => {
 </div>
 <div className={styles.content}> 
 <div>
-<h5>Episode 8 :- lets set up Backend</h5>
-<span>Setting backend with mongodb</span>
+<h5>Episode 8 :- React Hooks</h5>
+<span>Lets see all the type of hooks with one project</span>
 </div>
 <div>
 <i className="bi bi-camera-video-fill"></i>
@@ -90,8 +90,8 @@ const Reactt = () => {
 </div>
 <div className={styles.content}> 
 <div>
-<h5>Episode 9 :- Assignments</h5>
-<span>Questions for pratise</span>
+<h5>Episode 9 :- Redux toolkit</h5>
+<span>Redux make the state management easy ,Let's get started</span>
 </div>
 <div>
 <i className="bi bi-camera-video-fill"></i>
@@ -99,8 +99,8 @@ const Reactt = () => {
 </div>
 <div className={styles.content}> 
 <div>
-<h5>Episode 9 :- Assignments</h5>
-<span>Questions for pratise</span>
+<h5>Episode 10 :- Project 1 </h5>
+<span> Disney hotstar</span>
 </div>
 <div>
 <i className="bi bi-camera-video-fill"></i>
@@ -108,20 +108,30 @@ const Reactt = () => {
 </div>
 <div className={styles.content}> 
 <div>
-<h5>Episode 9 :- Assignments</h5>
-<span>Questions for pratise</span>
+<h5>Episode 11 :- Project 2</h5>
+<span>Alibaba app</span>
 </div>
 <div>
 <i className="bi bi-camera-video-fill"></i>
 </div>
 </div>
+<div className={styles.content}> 
+<div>
+<h5>Episode 11 :- Interview tips and Questions</h5>
+<span>Practise 10 coding interview questions with me  </span>
+</div>
+<div>
+<i className="bi bi-camera-video-fill"></i>
+</div>
+</div>
+
      </div>
 
      <div className={styles.right}>
 <img src={nextjs} className='img-fluid ' alt="" />
 <p> <IoVideocam className='flex items-center mx-1 bg-red'/> In depth High Quality Videos</p>
 <p> <GiMechaHead  className='flex items-center mx-1'/> Project Based Learning</p>
-<p> <FaClock className='flex items-center mx-1'/> 12 hours of Content</p>
+<p> <FaClock className='flex items-center mx-1'/> 15 hours of Content</p>
 <p> <BsFillFileBarGraphFill className='flex items-center mx-1'/> Beginner to Pro</p>
 <p> <RiProjectorFill className='flex items-center mx-1'/> Hands-on exercises</p>
 <p>  <FaCircleDown className='flex items-center mx-1' />Downloadable content</p>

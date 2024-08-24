@@ -98,8 +98,8 @@ const Next = () => {
 </div>
 <div className={styles.content}> 
 <div>
-<h5>Episode 9 :- Assignments</h5>
-<span>Questions for pratise</span>
+<h5>Episode 10 :- project 1</h5>
+<span>Full stack tinder app</span>
 </div>
 <div>
 <i className="bi bi-camera-video-fill"></i>
@@ -107,8 +107,8 @@ const Next = () => {
 </div>
 <div className={styles.content}> 
 <div>
-<h5>Episode 9 :- Assignments</h5>
-<span>Questions for pratise</span>
+<h5>Episode 10 :- project 2</h5>
+<span>Linkedin app</span>
 </div>
 <div>
 <i className="bi bi-camera-video-fill"></i>

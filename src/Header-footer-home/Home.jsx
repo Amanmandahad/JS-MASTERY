@@ -11,17 +11,15 @@ import portfolio from "../assets/portfolio.svg";
 import resume from "../assets/resume.svg";
 import stars from "../assets/Stars.svg";
 import { IoArrowDown } from "react-icons/io5";
-import { useAuth0 } from "@auth0/auth0-react";
+
 import Home2 from "./Home2";
 
 
 const Home = () => {
-  const { isAuthenticated } = useAuth0();
+
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate('/courses'); // Navigate to the target route
-  };
+
 
   const handlechange = () => {
     navigate('/mentor'); // Navigate to the target route
@@ -29,9 +27,6 @@ const Home = () => {
 
  const handlereview = ()=>{
   navigate('/courses'); 
- }
- const handlelogin = ()=>{
-  navigate('/login'); 
  }
 
   return (
@@ -44,29 +39,8 @@ const Home = () => {
               <h1>
                 Become the software engineer that companie's love to hire
               </h1>
-
-           {
-            isAuthenticated ? (
-              <button onClick={handlechange}>1:1 Mentorship</button>
-            ):(
-              <button onClick={handlelogin}>1:1 Mentorship</button>
-              
-            )
-           }
-            {
-            isAuthenticated ? (
-              <button onClick={handlereview}>All courses</button>
-            ):(
-              <button onClick={handlechange}>All courses</button>
-
-              
-            )
-           }
-
-
-
-              
-             
+              <button onClick={handlechange}>1:1 Mentorship</button>         
+              <button onClick={handlereview}>All courses</button>            
             </div>
             <div className="col-md-5 col-sm-12">
               <img
@@ -172,16 +146,10 @@ const Home = () => {
                   Skill enhancement and validation go beyond basic skills and
                   develop skills like GraphQL, Pipelines, and more about backend
                   and frontend technologies.
-                </p>
-               {isAuthenticated ? (
+                </p>            
                  <button onClick={handlereview}>
                  Enroll in the course now <IoArrowDown style={{ fontSize: '23px' }} />
                </button>
-               ):(
-                <button onClick={handlelogin}>
-                  Enroll in the course now <IoArrowDown style={{ fontSize: '23px' }} />
-                </button>
-               )}
               </div>
             </div>
           </div>
