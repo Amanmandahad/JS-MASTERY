@@ -34,7 +34,7 @@ const Header = () => {
             <div className={style.btn}>
               {isAuthenticated ? (
                 <button className={style.normal} onClick={() => logout({ returnTo: window.location.origin })}>
-                  Logout
+                  Log out
                 </button>
               ) : (
                 <button className={style.normal} onClick={() => loginWithRedirect()}>
