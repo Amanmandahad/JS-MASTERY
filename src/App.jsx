@@ -10,6 +10,7 @@ import Next from './Courses/nextjs/Next';
 import Reactt from './Courses/react/Reactt';
 import Javascript from './Courses/js/Javascript';
 import Login from './components/authenticat/Login'
+import { AuthProvider } from './components/authenticat/Authcontext'; // Adjust the path as needed
 function App() {
   return (
     <>

@@ -6,16 +6,15 @@ import App from './App.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
   <Auth0Provider
-  domain="dev-rwybiybatpkgqx70.us.auth0.com"
-  clientId="tzIxQ8z1m8i3x9mGtYF1xq9AgX80wB5N"
+ domain="dev-rwybiybatpkgqx70.us.auth0.com"
+    clientId="JcjhmG0FrdkZecPLbBZ74dwH4Psva1ug"
   authorizationParams={{
     redirect_uri: window.location.origin
   }}
 >
- <BrowserRouter>
  <App />
- </BrowserRouter>
 </Auth0Provider>,
-
+</BrowserRouter>
 )

@@ -1,0 +1,108 @@
+/* Base styles for the login page */
+.login {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  min-width: 400px; /* Adjusted min-width for smaller screens */
+  /* max-width: 90vw; Ensures container doesn’t overflow */
+  background-color: #f9f9f9;
+}
+
+.loginButton, .logoutButton {
+  padding: 0.6rem 1.1rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #6200ee;
+  color: white;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.loginButton:hover, .logoutButton:hover {
+  background-color: #3700b3;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputField {
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: black;
+  color: white; /* Ensures text is visible on black background */
+}
+
+.emailLoginButton, .googleLoginButton {
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.emailLoginButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.emailLoginButton:hover {
+  background-color: #0056b3;
+}
+
+.googleLoginButton {
+  background-color: #db4437;
+  color: white;
+}
+
+.googleLoginButton:hover {
+  background-color: #b71c1c;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .loginContainer {
+      padding: 1.5rem; /* Reduced padding for smaller screens */
+      max-width: 80%; /* Allow container to use full width */
+  }
+
+  .inputField {
+      font-size: 0.875rem; /* Adjust font size for better readability */
+  }
+
+  .loginButton, .logoutButton, .emailLoginButton, .googleLoginButton {
+      font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .loginContainer {
+      padding: 0.5rem; /* Further reduced padding */
+  }
+
+  .inputField {
+      padding: 0.5rem; /* Smaller padding for input fields */
+  }
+
+  .loginButton, .logoutButton, .emailLoginButton, .googleLoginButton {
+      padding: 0.5rem; /* Smaller button padding */
+  }
+}

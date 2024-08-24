@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import "./Home.module.css";
 import jsmastery from "../assets/header.logo.webp";
 import img from "../assets/contact (2).png";
@@ -14,9 +15,7 @@ import { IoArrowDown } from "react-icons/io5";
 
 import Home2 from "./Home2";
 
-
 const Home = () => {
-
   const navigate = useNavigate();
 
 
@@ -25,19 +24,19 @@ const Home = () => {
     navigate('/mentor'); // Navigate to the target route
   };
 
- const handlereview = ()=>{
-  navigate('/courses'); 
- }
+  const handlereview = () => {
+    navigate('/courses'); 
+  };
 
   return (
     <>
       {/* Hero Section */}
-      <div className={style.contain} >
+      <div className={style.contain}>
         <div className="container">
           <div className="row justify-content-between align-items-center">
             <div className="col-md-5 col-sm-12">
               <h1>
-                Become the software engineer that companie's love to hire
+                Become the software engineer that companies love to hire
               </h1>
               <button onClick={handlechange}>1:1 Mentorship</button>         
               <button onClick={handlereview}>All courses</button>            
@@ -61,7 +60,7 @@ const Home = () => {
               <h1 style={{ color: '#A679FF' }}>10k+</h1>
               <p>Students taught</p>
             </div>
-            <div className={`col-md-2  col-sm-2 col-lg-2 ${style.skill}`} style={{ boxShadow: '0px 0px 10px #4CCFAF' }}>
+            <div className={`col-md-2 col-sm-2 col-lg-2 ${style.skill}`} style={{ boxShadow: '0px 0px 10px #4CCFAF' }}>
               <h1 style={{ color: '#4CCFAF' }}>1M+</h1>
               <p>Youtube fans</p>
             </div>
@@ -147,9 +146,9 @@ const Home = () => {
                   develop skills like GraphQL, Pipelines, and more about backend
                   and frontend technologies.
                 </p>            
-                 <button onClick={handlereview}>
-                 Enroll in the course now <IoArrowDown style={{ fontSize: '23px' }} />
-               </button>
+                <button onClick={handlereview}>
+                  Enroll in the course now <IoArrowDown style={{ fontSize: '23px' }} />
+                </button>
               </div>
             </div>
           </div>
